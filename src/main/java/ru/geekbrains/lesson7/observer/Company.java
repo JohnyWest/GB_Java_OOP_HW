@@ -18,12 +18,12 @@ public class Company {
         this.name = name;
         this.jobAgency = jobAgency;
         this.maxSalary = maxSalary;
-        this.Vacancy = vacancy;
+        this.vacancy = vacancy;
     }
 
     public void needEmployee(){
         int salary = random.nextInt(maxSalary);
-        jobAgency.sendOffer(name, salary);
+        jobAgency.sendOffer(name, salary, vacancy);
     }
 
 }
