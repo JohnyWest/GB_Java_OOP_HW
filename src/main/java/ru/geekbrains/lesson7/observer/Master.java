@@ -6,14 +6,14 @@ public class Master implements Observer{
     private int salary = 80000;
     private String searchingJob;
 
-    public Master(String name) {
+    public Master(String name, String searchingJob) {
         this.name = name;
         this.searchingJob = searchingJob;
     }
 
     @Override
     public void receiveOffer(String nameCompany, int salary, Vacancy vacancy) {
-        if (this.salary <= salary && searchingJob == vacancy.getName()){
+        if (this.salary <= salary && searchingJob.equals(vacancy.getName())){
             System.out.printf("Специалист %s: Мне нужна эта работа! (компания: %s; заработная плата: %d)\n",
                     name, nameCompany, salary, vacancy);
             this.salary = salary;
