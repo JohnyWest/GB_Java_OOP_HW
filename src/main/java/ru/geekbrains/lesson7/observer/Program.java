@@ -14,7 +14,8 @@ public class Program {
         Publisher jobAgency = new JobAgency();
         Company google = new Company("Google", jobAgency, 120000, new Vacancy("Junior developer"));
         Company yandex = new Company("Yandex", jobAgency, 95000), new Vacancy("Senior developer");
-        Company geekBrains = new Company("GeekBrains", jobAgency, 98000, new Vacancy("Human Resources"));
+        Company geekBrains = new Company("GeekBrains"), jobAgency, 9800, new Vacancy("HR")
+        //Company geekBrains = new Company("GeekBrains", jobAgency, 98000, new Vacancy("Human Resources"));
 
         Student student1 = new Student("Студент #1");
         Master master1 = new Master("Мастер #1");
