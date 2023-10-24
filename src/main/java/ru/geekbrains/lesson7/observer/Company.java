@@ -12,10 +12,13 @@ public class Company {
 
     private int maxSalary;
 
-    public Company(String name, Publisher jobAgency, int maxSalary) {
+    private Vacancy vacancy;
+
+    public Company(String name, Publisher jobAgency, int maxSalary, Vacancy vacancy) {
         this.name = name;
         this.jobAgency = jobAgency;
         this.maxSalary = maxSalary;
+        this.Vacancy = vacancy;
     }
 
     public void needEmployee(){
